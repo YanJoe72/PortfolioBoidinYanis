@@ -1,0 +1,72 @@
+@import 'https://fonts.googleapis.com/css?family=Raleway';
+
+.details-projet {
+  font-family: Raleway;
+  background-color: #f9f9f9; /* Couleur de fond du projet */
+  padding: 20px; /* Espace intérieur */
+  margin-bottom: 20px; /* Marge en bas pour séparer les projets */
+  border-radius: 5px; /* Coins arrondis */
+  margin-left: 100px;
+  margin-right: 100px;
+  transition: transform 0.3s; /* Ajoute une transition pour l'effet d'animation */
+  }
+
+  .details-projet:hover {
+    transform: scale(1.02); /* Grossit de 10% lors du survol */
+}
+  
+  .details-projet h2 {
+    font-size: 1.5em; /* Taille de la police du titre */
+    margin-bottom: 10px; /* Marge en bas pour séparer le titre de la description */
+  }
+  
+  .details-projet p {
+    color: black; /* Couleur du texte de la description */
+    margin-bottom: 15px; /* Marge en bas pour séparer les paragraphes */
+  }
+  
+  .details-projet img {
+    width: 100%; /* Image pleine largeur */
+    height: auto; /* Hauteur automatique pour préserver les proportions */
+    border-radius: 5px; /* Coins arrondis */
+  }
+  
+  .details-projet a {
+    display: inline-block; /* Affichage en bloc pour un style de bouton */
+    background-color: #179498; /* Couleur de fond du bouton */
+    color: white; /* Couleur du texte du bouton */
+    padding: 10px 20px; /* Rembourrage du bouton */
+    text-decoration: none; /* Suppression du soulignement des liens */
+    border-radius: 5px; /* Coins arrondis */
+  }
+
+  .voir-plus {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s;
+  }
+  
+  .voir-plus:hover {
+    background-color: #0056b3; /* Changement de couleur lors du survol */
+    transform: translateY(-3px); /* Décalage vers le haut */
+  }
+  
+  .voir-plus:active {
+    background-color: #003d7f; /* Changement de couleur lors du clic */
+    transform: translateY(0); /* Réinitialisation du décalage */
+  }
+  
+  .voir-plus:focus {
+    outline: none; /* Supprimer la bordure de focus */
+  }
+  
+  .voir-plus:focus:not(:active) {
+    background-color: #0056b3; /* Changement de couleur lors du survol lors du focus */
+  }
+  

@@ -1,0 +1,172 @@
+@import 'https://fonts.googleapis.com/css?family=Raleway';
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Raleway;
+
+  
+}
+
+/* Styles pour la barre de navigation */
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #179498;
+  padding: 10px;
+  
+}
+
+.logo{
+  padding-left: 50px;
+}
+
+.logo img {
+  width: 75px; /* Ajustez la taille de votre logo selon vos besoins */
+  height: auto;
+}
+
+.profile-picture {
+  border-radius: 50%; /* Rend la photo circulaire */
+  object-fit: cover; /* Ajuste la taille de l'image pour remplir le cercle */
+}
+
+.profile-picture:hover {
+  transform: scale(1.5); /* Agrandissement de 10% lors du survol */
+  transition: transform 0.3s ease; /* Animation fluide */
+}
+
+.profile-picture:not(:hover) {
+  transform: scale(1); /* Réinitialisation de la taille lorsqu'elle n'est pas survolée */
+  transition: transform 0.3s ease; /* Animation fluide */
+}
+
+.title {
+  color: white;
+  text-align: center;
+  font-size: 1.2em; /* Taille de police du titre */
+  margin-right: 400px;
+}
+
+.navbar {
+  background-color: #179498;
+}
+
+.nav-links {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  padding-right: 100px;
+}
+
+.nav-links li {
+  display: inline-block; /* Afficher les éléments en ligne */
+}
+
+.nav-links li a {
+  width: 135px;
+  font-size: 19px;
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 5px; /* Espace autour du texte */
+  text-decoration: none;
+  font-weight: bold;
+}
+
+
+/* Styles pour la barre de navigation */
+.nav-links li {
+  display: inline-block;
+  padding: 10px;
+  position: relative;
+}
+
+.nav-links li::after {
+  content: '';
+  display: block;
+  width: 0;
+  height: 2px;
+  background-color: #fff;
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transition: width 0.3s ease, left 0.3s ease;
+}
+
+.nav-links li a {
+  color: white;
+  text-decoration: none;
+}
+
+.nav-links li:hover::after {
+  width: 90%;
+  left: -1px;
+}
+
+/* Styles pour la barre de navigation */
+.nav-links li {
+  display: inline-block;
+  padding: 10px;
+  position: relative;
+  transition: transform 0.3s; /* Ajoute une transition pour l'effet d'animation */
+}
+
+.nav-links li::after {
+  margin-left: 11px;
+  content: '';
+  display: block;
+  width: 0px;
+  height: 2px; /* Épaisseur de la barre */
+  background-color: #fff; /* Couleur de la barre */
+  position: absolute;
+  top: -5px; /* Position de la barre par rapport au haut de l'élément */
+  left: 50%; /* Positionnement au milieu */
+  transition: width 0.3s ease, left 0.3s ease; /* Animation de la largeur et de la position */
+}
+
+.nav-links li a:hover::after {
+  width: calc(100% - 20px); /* Largeur de la barre sur le survol */
+  left: 1px; /* Position de la barre sur le survol */
+}
+
+.nav-links li:hover {
+  transform: translateY(5px); /* Animation de translation vers le bas */
+}
+
+
+/* Styles de base pour l'image */
+.profile-picture {
+  width: 100px; /* Ajustez la taille selon vos besoins */
+  height: 100px;
+  border-radius: 50%; /* Pour obtenir une forme circulaire */
+  cursor: pointer; /* Changement de curseur au survol */
+  position: relative; /* Pour positionner le menu déroulant */
+}
+
+/* Styles pour le menu déroulant */
+.profile-picture::after {
+  content: 'Menu déroulant'; /* Contenu du menu (ajustez selon vos besoins) */
+  display: none; /* Masquer le menu par défaut */
+  position: absolute; /* Position absolue par rapport à l'image parente */
+  top: 120%; /* Ajustez la position verticale du menu selon vos besoins */
+  left: 0; /* Ajustez la position horizontale du menu selon vos besoins */
+  background-color: #fff; /* Couleur de fond du menu */
+  padding: 10px; /* Marge intérieure du menu */
+  border: 1px solid #ccc; /* Bordure du menu */
+  border-radius: 5px; /* Coins arrondis du menu */
+  z-index: 1; /* Assure que le menu s'affiche au-dessus de tout le reste */
+}
+
+/* Styles pour afficher le menu lorsqu'on survole l'image */
+.profile-picture:hover::after {
+  display: block; /* Afficher le menu au survol */
+}
+
+
+
+
+
+

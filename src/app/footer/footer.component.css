@@ -1,0 +1,47 @@
+/* Styles pour le footer */
+.footer {
+    background-color: #179498; /* Couleur de fond du footer */
+    color: white; /* Couleur du texte */
+    padding: 20px 0; /* Espace intérieur du footer */
+    text-align: center; /* Centrage du texte */
+    width: 100%; /* Largeur maximale */
+    bottom: 0; /* Alignement en bas */
+    display: flex;
+  }
+  
+  .footer-content {
+    max-width: 1200px; /* Largeur maximale du contenu du footer */
+    margin: 0 auto; /* Centrage du contenu */
+  }
+  
+  .footer p {
+    margin: 0; /* Suppression des marges par défaut */
+    text-align: center;
+    margin-left: 100px;
+    margin-top: -10px;
+    margin-bottom: 12px;
+  }
+
+  a{
+    display: inline;
+    text-decoration: none;
+    color: black;
+    padding-left: 5px;
+  }
+
+  .gauche{
+    margin-right: 600px;
+  }
+  .centre{
+    margin-left: 725px;
+  }
+  
+  img {
+    padding-left: 60px;
+    margin-top: 5px;
+    max-width: 40px; /* Limiter la largeur maximale à 300 pixels */
+    height: auto; /* Laisser la hauteur ajustée automatiquement pour maintenir les proportions */
+}
+.images{
+  margin-left: 25px;
+}
