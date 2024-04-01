@@ -8,7 +8,7 @@ body {
     font-family: Raleway;
   }
 
-  a{
+  .reseaux{
     text-decoration: none;
     color: #179498;
   }
@@ -85,7 +85,7 @@ body {
   
   /* Animation pour les liens dans les sections */
   .section a {
-    color: blue;
+    color: white;
     transition: color 0.3s ease-in-out;
   }
   
@@ -93,3 +93,47 @@ body {
     color: darkblue; /* Changement de couleur au survol */
   }
 
+  .voir-plus {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s;
+
+  }
+  
+  .voir-plus:hover {
+    background-color: #0056b3; /* Changement de couleur lors du survol */
+    transform: translateY(-3px); /* Décalage vers le haut */
+  }
+  
+  .voir-plus:active {
+    background-color: #003d7f; /* Changement de couleur lors du clic */
+    transform: translateY(0); /* Réinitialisation du décalage */
+  }
+  
+  .voir-plus:focus {
+    outline: none; /* Supprimer la bordure de focus */
+  }
+  
+  .voir-plus:focus:not(:active) {
+    background-color: #0056b3; /* Changement de couleur lors du survol lors du focus */
+  }
+
+ img{
+    display: block; /* Assurez-vous que l'image est un bloc pour appliquer les marges automatiques */
+    margin-left: auto;
+    margin-right: auto;
+ }
+
+ .voir-plus{
+  display: block; /* Assurez-vous que l'image est un bloc pour appliquer les marges automatiques */
+    margin-left: 292px;
+    margin-right: 292px;
+    color: white;
+    text-decoration: none;
+ }
