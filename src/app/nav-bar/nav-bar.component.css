@@ -165,8 +165,84 @@
   display: block; /* Afficher le menu au survol */
 }
 
+/*-------------------------------------------------*/
 
+/* Utilise @media pour cibler les écrans de téléphone */
+@media screen and (max-width: 480px) {
+  /* Autres styles pour les écrans de téléphone */
 
+  .nav-links {
+    display: none;
+    /* Autres styles pour masquer le menu par défaut */
+  }
 
+  .menu-icon {
+    display: block;
+    /* Autres styles pour afficher l'icône du menu */
+  }
 
+  /* Autres styles pour la barre de navigation */
 
+  .nav-active {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #179498;
+    position: absolute;
+    top: 60px; /* Ajustez selon vos besoins */
+    left: 0;
+    right: 0;
+    z-index: 1; /* Assure que le menu apparaisse par-dessus le reste du contenu */
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.1); /* Ombre légère */
+    animation: slideIn 0.3s forwards; /* Animation pour le menu lorsqu'il apparaît */
+  }
+
+  .nav-active a {
+    color: white;
+    padding: 10px;
+  }
+
+  .menu-icon div {
+    width: 25px;
+    height: 3px;
+    background-color: #fff;
+    margin: 5px;
+  }
+
+  /* Animation pour le menu lorsqu'il apparaît */
+  @keyframes slideIn {
+    from {
+      transform: translateY(-100%);
+    }
+    to {
+      transform: translateY(0);
+    }
+  }
+
+  /* Animation pour le menu lorsqu'il disparaît */
+  @keyframes slideOut {
+    from {
+      transform: translateY(0);
+    }
+    to {
+      transform: translateY(-100%);
+    }
+  }
+
+  /* Appliquer les animations au menu actif */
+  .nav-active {
+    animation: slideIn 0.3s forwards;
+  }
+
+  /* Appliquer les animations au menu désactivé */
+  .nav-links {
+    animation: slideOut 0.3s forwards;
+  }
+
+  /* Ajout de styles pour afficher le menu lorsqu'on clique sur l'icône */
+  .menu-open .nav-links {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
