@@ -18,6 +18,11 @@ import { TodoListComponent } from './todo-list/todo-list.component';
 import { CmonetiquetteComponent } from './cmonetiquette/cmonetiquette.component';
 import { CesnacComponent } from './cesnac/cesnac.component';
 import { CompetencesComponent } from './competences/competences.component';
+import { BiblioSIOComponent } from './biblio-sio/biblio-sio.component';
+import { AmphitrionComponent } from './amphitrion/amphitrion.component';
+import { BioRelaisComponent } from './bio-relais/bio-relais.component';
+import { TicketingComponent } from './ticketing/ticketing.component';
+import { YSportMapComponent } from './ysport-map/ysport-map.component';
 
 
 
@@ -25,6 +30,11 @@ const routes: Routes = [
   {path: 'accueil', component : AccueilComponent,},
   {path: 'projets', component : ProjetsComponent},
   {path: 'experiences', component : ExperiencesComponent},
+  {path: 'bibliosio', component : BiblioSIOComponent},
+  {path: 'amphitrion', component : AmphitrionComponent},
+  {path: 'bioRelais', component : BioRelaisComponent},
+  {path: 'ticketing', component : TicketingComponent},
+  {path: 'ysport-map', component : YSportMapComponent},
   {path: 'generateurSQL', component : GenrateurSQLComponent},
   {path: 'motus', component: MotusComponent},
   {path: 'siteDynamique', component: M2lComponent},
@@ -50,7 +60,12 @@ const routes: Routes = [
     TodoListComponent,
     CmonetiquetteComponent,
     CesnacComponent,
-    CompetencesComponent
+    CompetencesComponent,
+    BiblioSIOComponent,
+    AmphitrionComponent,
+    BioRelaisComponent,
+    TicketingComponent,
+    YSportMapComponent
     
 
   ],
